@@ -1,0 +1,275 @@
+/*#142850,#00909e,#142850 
+#10416b*/
+/*--------FONTS-----------*/
+@font-face {
+  font-family: "Tangerine";
+  src: url(fonts/Tangerine-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Tuesday";
+  src: url(fonts/TuesdayNight-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Yesteryear";
+  src: url(fonts/Yesteryear-Regular.ttf) format("truetype");
+}
+
+
+/*--------Headings-----------*/
+
+h1 {
+  color: #F0F8FF;
+  font-family: "Tuesday";
+  font-size: 150%;
+}
+/*-----------------------*/
+
+body,
+html
+{
+    background: linear-gradient(to bottom,#10416b, black); 
+    height: 100%;
+    background-repeat: no-repeat;
+    font-size: 100px;
+    overflow: hidden;
+}
+
+.navbar-custom {
+    background: rbga(0, 0, 0, 0);
+    padding:0 40px 0 40px;
+    margin: 10px 10px 20px 10px;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+
+.navbar-custom .nav-item,
+.navbar-custom .nav-link{
+    display: block;
+    margin: 10px 10px 0 10px;
+    padding:0 40px 0 40px;
+    color: #F0F8FF; 
+    transition: color 0.5s, padding 0.2s;
+}
+
+.navbar-custom .nav-item:hover,
+.navbar-custom .nav-link:hover{
+    margin: 10px 10px 0 10px;
+    padding:0 40px 0 40px;
+    color: #5c5c5c; 
+}
+
+.head {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+}
+
+/*------------------------------*/
+
+.search-container input[type=text]{
+    padding-left: 2%;
+    position: absolute;
+    left: 15%;
+    top: 60%;
+    height: 38px;
+    width: 70%;
+    border-radius: 500px;
+    border-style: none;
+    font-size: 20px;
+    color: black;
+    
+}
+
+.search-container button {
+    
+    position: absolute;
+    margin: 0;
+    padding: 2px 0 0 0;
+    border: 0;
+    background-color: white;
+    color: #9f9f9f;
+    border-radius: 2000px;
+    font-size: 20px;
+    height: 35px;
+    right: 16%;
+    top: 60%;
+    transition: color 0.5s; 
+}
+
+.search-container button:hover {
+    color: #5c5c5c;
+
+}
+
+.mini-container {
+    color: #
+    margin-top:0.5%;
+    padding-left: 2%;
+    display: flex;
+    justify-content: center;
+    height: 38px;
+    border-radius: 500px;
+    border-style: none;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    color: #F0F8FF;
+}
+
+
+
+.mini-container input[type=text] {
+    padding-left: 5px;
+    border-radius: 2000px;
+    border-style: none;
+    background-color: #F0F8FF;
+
+}
+
+.mini-container button {
+    position: absolute;
+    right: 40%;
+    border-radius: 2000px;
+    border-style: none;
+    transition: color 0.5s; 
+    background-color: #F0F8FF;
+
+}
+
+.mini-container button:hover {
+    color: #5c5c5c;
+
+}
+
+
+/*----------------------------------*/
+
+.foot {
+    display: inline;
+    position: absolute;
+    bottom: 0%;
+    height:10%;
+    width: 100%;
+    font-size: 15px;
+    
+    
+}
+
+.copy p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-bottom: 0;
+    color: #747373;
+}
+
+.facebook,
+.instagram,
+.twitter{
+    float: right;
+    border:0;
+    padding: 0 15px 5px 0;
+    font-size:25px;
+    color: #747373;
+    background:linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    transition: color 0.5s;
+    
+}
+
+.facebook:hover{
+    color: #4267B2;
+}
+
+.instagram:hover{
+    color: #e95950;
+}
+.twitter:hover{
+    color: #00acee ;
+}
+
+
+/*----------Responsive------------------*/
+
+@media only screen and (max-width: 440px) {
+    h1 {
+        font-size: 115%;
+    }
+
+    .navbar-custom  {
+        font-size: 15px;
+    }
+    
+    .foot {
+        font-size: 10px;
+    }
+    
+    .search-container button {
+        font-size: 10x;
+        right: 17%;
+
+    }
+    
+    .mini-container {
+        display: none;
+
+    }
+}
+
+/*--------------------------------*/
+
+.hold-card {
+    margin: 30px;
+    font-size: 20px;
+    background: #F0F8FF;
+    height: 75%;
+    border-radius: 20px;
+
+}
+
+.row {
+    display: flex;
+    height: 50%;
+}
+.col-sm {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    margin: 50px;
+    background-color: #d4dbe1;
+    transition: padding 0.5s, background-color 0.5s;
+}
+
+.col-sm:hover {
+    background-color: #d2d2d2;
+    padding: 25px;
+    
+}
+
+/*---------------------------------*/
+
+::-webkit-input-placeholder {
+  color: #dae1e7;
+  font-size: 20px;
+}
+
+::-moz-placeholder {
+  color: #dae1e7;
+  font-size: 20px;
+}
+:-ms-input-placeholder {
+  color: #dae1e7;
+  font-size: 20px;
+}
+::placeholder {
+  color: #dae1e7;
+  font-size: 20px;
+}
